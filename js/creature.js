@@ -7,7 +7,7 @@ function loadCreature() {
 	} );
 
 	var loader = new THREE.OBJLoader();
-	loader.load('../assets/creature.obj', function (object) {
+	loader.load('../creature.obj', function (object) {
 		loadedObject = object;
 		console.log(loadedObject);
 		var geometry = object.children[0].geometry;
